@@ -21,7 +21,7 @@ const changeColor = () => {
 
   let hexcode = ""; // empty string to store generated hex code
 
-  // run loop 5 times to get hexcode with 5 characters
+  // run loop 6 times to get hexcode with 6 characters
   for (let i = 0; i < 6; i++) {
     let random_index = Math.floor(Math.random() * hex_numbers.length);
 
