@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  width: 90%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hex-color {
+  text-align: center;
+}
+
+.hex-color h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  animation: changecolor 5s infinite alternate;
+}
+
+.hex-color h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin: 10%;
+}
+
+.hex-color p {
+  font-size: 1.2rem;
+  margin-top: 10%;
+}
+
+button {
+  width: 8rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 1.5rem;
+  background-color: hsl(202, 75%, 45%);
+  color: hsl(0, 0%, 100%);
+}
+
+button:hover {
+  color: hsl(202, 75%, 45%);
+  background-color: transparent;
+  border: 2px solid hsl(202, 75%, 45%);
+  cursor: pointer;
+}
+
+@keyframes changecolor {
+  0% {
+    color: hsl(251, 60%, 45%);
+  }
+  20% {
+    color: hsl(219, 60%, 45%);
+  }
+  40% {
+    color: hsl(110, 69%, 25%);
+  }
+  60% {
+    color: hsl(71, 100%, 60%);
+  }
+  80% {
+    color: hsl(34, 65%, 50%);
+  }
+  100% {
+    color: hsl(0, 60%, 50%);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hex-color h1 {
+    font-size: 1.5rem;
+  }
+
+  .hex-color h2 {
+    font-size: 1.2rem;
+  }
+
+  .hex-color p {
+    font-size: 1rem;
+  }
+}
