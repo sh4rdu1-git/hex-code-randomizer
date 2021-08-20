@@ -52,12 +52,13 @@ button {
 }
 
 button:hover {
-  color: hsl(202, 75%, 45%);
   background-color: transparent;
+  color: hsl(202, 75%, 45%);
   border: 2px solid hsl(202, 75%, 45%);
   cursor: pointer;
 }
 
+/* Rainbow color change animation */
 @keyframes changecolor {
   0% {
     color: hsl(251, 60%, 45%);
@@ -79,6 +80,7 @@ button:hover {
   }
 }
 
+/* Reduce font size for smaller screens */
 @media screen and (max-width: 480px) {
   .hex-color h1 {
     font-size: 1.5rem;

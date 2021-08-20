@@ -1,4 +1,5 @@
 const changeColor = () => {
+  // valid characters in a hexadecimal code
   const hex_numbers = [
     "0",
     "1",
@@ -18,15 +19,18 @@ const changeColor = () => {
     "F",
   ];
 
-  let hexcode = "";
+  let hexcode = ""; // empty string to store generated hex code
 
+  // run loop 5 times to get hexcode with 5 characters
   for (let i = 0; i < 6; i++) {
     let random_index = Math.floor(Math.random() * hex_numbers.length);
 
     hexcode += hex_numbers[random_index];
   }
 
+  // insert generated hexcode in the paragraph text inside HTML
   document.getElementById("hex-code").innerHTML = hexcode;
 
+  // change background color to match the hexcode value
   document.getElementsByTagName("body")[0].style.background = "#" + hexcode;
 };
